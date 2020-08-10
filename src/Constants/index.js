@@ -1,0 +1,1 @@
+export const colors = ["gold", "gainsboro", "teal", "chartreuse", "mediumaquamarine", "firebrick", "crimson"];
