@@ -60,7 +60,7 @@ const Profile = (props) => {
   );
 
   return (
-    <div className="px-1 profile-wrapper mt-xl--2rem">
+    <div className="px-1 profile-wrapper mt-md--2rem mt-lg--2rem mt-xl--2rem">
       <div className="grid">
         <img alt={login} className="profile-img col-xs-3 col-sm-3 col-md-12 col-lg-12 col-xl-12" src={avatar_url} />
         <h1 className="full-name mt-1 col-xs-9 col-sm-9 col-md-12 col-lg-12 col-xl-12">{name}<br />
@@ -75,10 +75,10 @@ const Profile = (props) => {
         <Icon className="" icon={kebabHorizontal16} />
       </div>
       <ul className="d-flex mt-1">
-        {connections.map(makeConnections)}
+        {connections.filter(({label}) => Boolean(label)).map(makeConnections)}
       </ul>
       <ul className="mt-1">
-        {details.map(makeDetails)}
+        {details.filter(({label}) => Boolean(label)).map(makeDetails)}
       </ul>
 
     </div>

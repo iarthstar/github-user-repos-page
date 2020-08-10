@@ -105,14 +105,14 @@ const Repositories = (props) => {
   return (
     <Layout>
       <div className="grid">
-        {tabView('d-xs-none d-sm-none d-md-none d-lg-none d-xl-block')}
+        {tabView('d-xs-none d-sm-none d-md-block d-lg-block d-xl-block')}
         <div className="col-xs-0 col-sm-0 col-md-0 col-lg-0 col-xl-1"></div>
         <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-10 px-xl-2 grid debug">
           <div className="col-12 grid">
             <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 debug">
               <Profile data={user} />
             </div>
-            {tabView('d-xs-block d-sm-block d-md-block d-lg-block d-xl-none')}
+            {tabView('d-xs-block d-sm-block d-md-none d-lg-none d-xl-none')}
             <div className="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-9 px-1 debug">
               <div className="grid mt-2 pb-1 bb-1 col-gap row-gap">
                 <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
@@ -145,7 +145,7 @@ const Repositories = (props) => {
             </div>
           </div>
         </div>
-        <div className="col-xs-0 col-sm-0 col-md-0 col-lg-1 col-xl-1"></div>
+        <div className="col-xs-0 col-sm-0 col-md-0 col-lg-0 col-xl-1"></div>
       </div>
     </Layout>
   );
