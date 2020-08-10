@@ -86,7 +86,7 @@ const Repositories = (props) => {
     } else if (queries['type'].value === 'fork') {
       type = fork;
     }
-    return name.includes(queries['q']) && lang && type;
+    return new RegExp(queries['q'], 'i').test(name) && lang && type;
   });
 
   const tabView = (displayClass) => (
